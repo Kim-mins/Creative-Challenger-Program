@@ -8,3 +8,4 @@ cd './mecab-0.996-ko-0.9.2' && ./configure && make && make check && sudo make in
 wget https://bitbucket.org/eunjeon/mecab-ko-dic/downloads/mecab-ko-dic-2.1.1-20180720.tar.gz
 tar zxfv mecab-ko-dic-2.1.1-20180720.tar.gz
 cd './mecab-ko-dic-2.1.1-20180720' && ./autogen.sh && ./configure && make && make check && sudo make install
+pip3 install sklearn
