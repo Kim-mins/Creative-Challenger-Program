@@ -13,11 +13,11 @@ fnames = os.listdir(path)
 # for each files
 article_words = []
 for fname in fnames:
-  with open(path+'/'+fname) as f:
-    reader = csv.reader(f)
-    articles = [tmp for tmp in reader]
-    for article in articles:
-      article_words += article
+    with open(path+'/'+fname) as f:
+        reader = csv.reader(f)
+        articles = [tmp for tmp in reader]
+        for article in articles:
+            article_words += article
 # remove repetition
 # from 62197921 to 192672 (length of list article_words)
 article_words = list(set(article_words))
